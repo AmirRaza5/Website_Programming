@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Submit New Event</title>
+</head>
+<body>
+ <header>
+ <h1>Submit a New Event</h1>
+ </header>
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="submit.html">Submit Event</a></li>
+ </ul>
+ </nav>
+ <main>
+ <form action="api/submit.php" method="POST">
+ <div>
+ <label for="event-title">Event Title:</label>
+ <input type="text" id="event-title" name="event-title">
+ </div>
+ <div>
+ <label for="event-date">Event Date:</label>
+ <input type="date" id="event-date" name="event-date">
+ </div>
+ <div>
+ <label for="event-category">Category:</label>
+ <select id="event-category" name="event-category">
+ <option value="tech">Tech</option>
+ <option value="music">Music</option>
+ <option value="art">Art</option>
+ </select>
+ </div>
+ <div>
+ <label for="event-description">Description:</label>
+ <textarea id="event-description" name="event-description" rows="5"></textarea>
+ </div>
+ <div>
+ <button type="submit">Submit Event</button>
+ </div>
+ </form>
+ </main>
+ <footer>
+ <p>© 2025 Your University</p>
+ </footer>
+</body>
+</html
